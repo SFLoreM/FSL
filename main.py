@@ -29,7 +29,7 @@ def gestisci_chiamata(nome_chiamato):
         # Il dipendente è nella sede che ha ricevuto la chiamata
         print(f"Chiamata per {nome_chiamato} – è in sede {sede_dest}. Risponde subito.")
     else:
-        # Il dipendente è nell'altra sede: inoltro immediato
+        # Il dipendente e stato ineoltato
         print(f"Chiamata per {nome_chiamato} – non è in sede {SEDE_CON_LINEA}. "
               f"Inoltro alla sede {sede_dest} in corso...")
         print(f"Chiamata inoltrata. {nome_chiamato} risponde in sede {sede_dest}.")
@@ -79,8 +79,10 @@ def menu():
             print("Scelta non valida.")
 
 if __name__ == "__main__":
-    # Aggiungiamo alcuni dipendenti di esempio
+    # Aggiungia dei dipendenti 
     aggiungi_dipendente("Mario", 1)
     aggiungi_dipendente("Luigi", 2)
     aggiungi_dipendente("Anna", 1)
     menu()
+
+
